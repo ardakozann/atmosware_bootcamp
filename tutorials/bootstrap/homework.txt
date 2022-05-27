@@ -1,0 +1,4 @@
+integrity ve crossorigin nedir ? (bootstrap içerisinde var) 
+
+col-md-3 nedir bak 
+12 eş parçaya bölünür.

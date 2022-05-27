@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>css</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+     <!-- font-awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+    <!-- ekstra css dosyasını burada göstermek gerekiyor -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- internal css: bu sayfadaki bütün tagleri etkiler -->
+    <style>
+        h1{
+            color:blue;
+        }
+        p{
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 style="text-align:center;">Lorem ipsum dolor sit amet consectetur.</h1>
+    </header>
+
+    <div class="box" style="background-color: black;"></div>
+    <div class="box" style="background-color: blue;"></div>
+    <div class="box" style="background-color: orange;"></div>
+    <div class="box"></div>
+
+    <div id="div_a">
+        <a href="#">1. satır</a>
+        <a href="#">2. satır</a>
+        <a href="#">3. satır</a>
+        <a href="#">4. satır</a>
+        <a href="#">5. satır</a>
+    </div>
+    
+
+    <br><br>
+    <hr>
+
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+        <li>item 5</li>
+        <li>item 6</li>
+    </ul>
+
+    <br><br>
+    <img id="img_id" src="../picture/resim1.jpg" alt="" width="50%"> 
+    <p id="float_paragraf" class="clear">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, magnam. Alias reiciendis vero, assumenda illo deserunt porro velit aliquid maiores excepturi accusamus qui provident. Quibusdam, odio! Officiis pariatur architecto repudiandae!</p>
+
+    <br>
+
+    <i class="fa-regular fa-address-card"></i>
+    <p class="paragraf">
+        paragraf Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, consectetur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis velit iusto vitae qui obcaecati dolore possimus quisquam dolores reprehenderit, repellat impedit praesentium in maiores, ea omnis ab, fuga ex assumenda.
+        Fugit, nemo corrupti aperiam, veritatis repellat recusandae culpa ratione deleniti consectetur ipsam, accusantium error. Quasi architecto assumenda eum sit nam, dignissimos voluptatem. Id quibusdam dolores temporibus ullam officia aliquid harum.
+        Asperiores, quibusdam maxime libero repellat dolore quidem suscipit delectus, iusto consequuntur eum ducimus tempore id ab omnis. Doloribus corporis sunt quis est ipsam cum quam magnam tempore. Aliquam, recusandae enim!
+    </p>
+
+    <div id="div_id">
+        <h5>div > p Lorem ipsum dolor sit amet.</h5>
+    </div>
+    
+    <h3 id="data_id">id data</h3>
+    <h3 class="data_class">id data2</h3>
+    
+    
+    <!-- !important > inlineCSS > internalCSS > externalCSS -->
+    <!-- inline css: sadece o satırde çalışır-->
+    <hr>
+    <p style="color:red;">Lorem ipsum dolor sit amet consectetur.</p>
+    <p style="color:pink!important;">Lorem ipsum dolor sit amet consectetur.</p>
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+    <h1>Heading -1</h1>
+    <h1>Heading -1</h1>
+    <h2>Deneme</h2>
+
+</body>
+</html>

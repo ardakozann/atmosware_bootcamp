@@ -1,0 +1,20 @@
+/* Bağlantı henüz ziyaret edilmemiş ise uygulanır. */
+a:link {
+    color: red;
+  }
+  
+  /* Bağlantı ziyaret edilmiş ise uygulanır. */
+  a:visited {
+    color: green;
+  }
+  
+  /* Mouse ile bağlantının üzerine geldiğinizde uygulanır. */
+  a:hover {
+    color: hotpink;
+  }
+  
+  /* Bağlantı seçildiğinde uygulanır. Test etmek için 
+  bağlantıya tıklayın ve sol tuşa basılı tutun. */
+  a:active {
+    color: blue;
+  }

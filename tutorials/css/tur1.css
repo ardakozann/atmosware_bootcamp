@@ -1,0 +1,28 @@
+body{
+    background: black;
+}
+
+
+#div1{
+    background-color: black;
+    width: 150px;
+    height: 100px;
+    margin:100px;
+    border: 10px solid cyan;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#div2{
+    background-color: black;
+    width: 150px;
+    height: 100px;
+
+    margin: 100px;
+    border: 10px solid cyan;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 20%;
+    border-bottom-left-radius: 30%;
+    border-top-left-radius: 40%;
+    display: inline-block;
+}

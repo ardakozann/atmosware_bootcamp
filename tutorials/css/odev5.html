@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>odev5</title>
+    <link rel="stylesheet" href="/html/odev5style.css">
+  </head>
+  <body>
+
+    <!-- start code -->
+      <form action="odev5.html" method="get" autocomplete="on">
+        <div>
+          <label for="adi">Name:</label>
+          <input type="text" id="adi" name="adi" placeholder="Enter Name" required autofocus/>
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter Email" required/>
+        </div>
+        <div>
+          <label for="password">password:</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+        <div>
+          <label for="phonenumber">Phone Number:</label>
+          <input type="tel" id="phonenumber" name="phonenumber" required />
+        </div>
+        <div>
+          <label for="">Gender:</label>
+          <div id="gender">
+            <input type="radio" id="Male" name="gender" />
+            <label for="Male">Male</label>
+  
+            <input type="radio" id="Female" name="gender" />
+            <label for="Female">Female</label>
+  
+            <input type="radio" id="Other" name="gender" />
+            <label for="Other">Other</label>
+          </div>
+          
+        </div>
+        <div>
+          <label for="language">Choose language:</label>
+          <select name="language" id="language">
+            <option value="Turkish">Turkish</option>
+            <option value="English">English</option>
+            <option value="French">French</option>
+            <option value="German">German</option>
+          </select>
+        </div>
+        <div>
+          <label for="zipcode">Zip code:</label>
+          <input type="number" id="zipcode" name="zipcode" required />
+        </div>
+        <div>
+          <label for="about">About:</label>
+          <textarea
+            name="about"
+            id=""
+            cols="21"
+            maxlength="50"
+            placeholder="Write about yourself.."
+            style="resize: none;"
+          ></textarea>
+        </div>
+        <div>
+          <button>Register</button>
+        </div>
+      </form>
+  </body>
+</html>

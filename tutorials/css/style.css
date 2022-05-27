@@ -1,0 +1,225 @@
+/* external css | makyajlama diyebiliriz */
+/* * bütün taglere eriş diyor */
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    /* 
+    width:200px; border:10px; padding:10px;
+    */
+
+}
+
+
+p{
+    color:orange;
+}
+
+#data_id{
+    color:purple;
+}
+
+.data_class{
+    color:blue;
+}
+
+#div_id{
+    /* eğer important yazılırsa onu yazarsa yoksa aşağıdakini alır  */
+    color:black;
+    color:orange;
+    color:rgb(0, 0, 0);
+    color:rgba(0, 0, 0, .3);
+    color:#abc;
+    color:#abc123;
+    /* arka plan rengi değiştirme */
+    background:black;
+    /* padding iç boşluk yaratır  */
+    padding: 12px;
+    /* padding:4px 6px 12px 24px; yukarı sağ aşağı sol şeklinde  */
+    /* padding:12px 24px; sağ sol veya yukarı aşağı kontrol et */
+    /* padding-top: 24px; sadece üst boşluk  */
+
+    /* margin iç boşluk yaratır  */
+    margin:12px;
+    /* margin:4px 6px 12px 24px; yukarı sağ aşağı sol şeklinde  */
+    /* margin:12px 24px; yukarı aşağı */
+    /* margin-top: 24px; sadece üst boşluk  */
+    
+    /* çerçeve yapma  */
+    border:3px solid blue;
+    /* açı verme */
+    /* border-radius: 50%; */
+
+    /* sadece tek bir köşede kavis vereceğiz  */
+    border-bottom-left-radius: 15%;
+}
+
+.paragraf{
+    color:black;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+    text-align: justify;
+    text-decoration: underline;
+    text-decoration: line-through;
+    text-decoration: none; 
+
+    /* ilk başlangıç kenardan uzaklık  */
+    text-indent: 24px;
+
+    text-transform: lowercase;
+    text-transform: uppercase;
+    /* ilk harf büyütme */
+    text-transform: capitalize;
+
+    /* kelimeler arası boşluğu */
+    word-spacing: 2px;
+    /* satır arası boşluklar  */
+    line-height: 2;
+    /* harfler arası boşluklar  - yazılırsa iç içe de geçirilebilir. */
+    letter-spacing: 10px;
+    /* Burada metini soldan sağa 3 ayrı metin olarak ayırıyor  */
+    column-count: 3;
+    column-rule: 10px solid red;
+    margin: 0 25px;
+}
+
+i{
+    color:blue;
+    font-size: 55px;
+
+}
+
+#div_a a{
+    color:red;
+    width: 25%;
+    /* display de bunlar sıra sıra veya yan yana dizmeye yarar  */
+    /* inlineblock width height leri kullanmaya yarar  */
+    display: inline-block;
+    text-decoration: none;
+}
+
+.clear::before{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+#image_id{
+    float:left;
+    margin-right: 15px;
+}
+
+#float_paragraf{
+    font-size: 20px;
+    text-align: justify;
+}
+
+ul{
+    list-style-type: none;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-left: 10%;
+}
+
+/* ul altındaki bütün li ler için yap  */
+ul li{
+    display: inline;
+    text-transform: uppercase;
+    color: white;
+    background: black;
+    padding: 4px 3px;
+}
+/* üzerine geldiğinde yapılacak işlemler hover ile olacak  */
+ul li:hover{
+    /* gölge verdirme  ilki x eksenini verir, 4 yazan etrafını belirler */
+    box-shadow: 1px 2px 4px 1px rgba(0, 0, 0, .8);
+    /* el işareti verme */
+    cursor: pointer;
+    /* yavaş yavaş gelmesi 2 saniye boyunca */
+    transition: 2s all;
+
+}
+
+header{
+    background-image: url("../picture/resim1.jpg");
+    height: 75vh;
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* min-width: en az 100 ve üzeri */
+/* x>=100*/
+@media screen and (min-width: 100px){
+    .box{
+        width:100%;
+        height:150px;
+        background:red;
+        display:inline-block;
+    }
+    
+    .box:hover{
+        box-shadow: 1px 1px 3px 1px black;
+        transition: 2s all;
+        transform: rotate(360deg);
+    }
+}
+
+/* min-width: en az 100 ve üzeri */
+/* 600<=X<=899 */ 
+@media screen and (min-width: 600px){
+    .box{
+        width:49%;
+        height:150px;
+        background:red;
+        display:inline-block;
+    }
+    
+    .box:hover{
+        box-shadow: 1px 1px 3px 1px black;
+        transition: 2s all;
+      
+    }
+}
+
+/* min-width: en az 100 ve üzeri */
+/* 900<=X<=1199 */ 
+@media screen and (min-width: 900px){
+    .box{
+        width:32%;
+        height:150px;
+        background:red;
+        display:inline-block;
+    }
+    
+    .box:hover{
+        box-shadow: 1px 1px 3px 1px black;
+        transition: 2s all;
+      
+    }
+}
+
+/* min-width: en az 100 ve üzeri */
+/* x>=1200 */ 
+@media screen and (min-width: 1200px){
+    .box{
+        width:24%;
+        height:150px;
+        background:red;
+        display:inline-block;
+    }
+    
+    .box:hover{
+        box-shadow: 1px 1px 3px 1px black;
+        transition: 2s all;
+    }
+}
