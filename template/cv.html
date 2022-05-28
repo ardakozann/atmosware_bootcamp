@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
   <head>
     <title>My One Page CV</title>
     <!-- favicon -->
-
+    <link rel="icon" id="favicon" href="../tutorials/picture/favicon.png" />
     <!-- Required meta tags -->
     <!-- türkçe karakter -->
     <meta charset="utf-8" />
@@ -46,18 +46,59 @@
     />
 
     <!-- external css -->
-
     <link rel="stylesheet" href="./cv_style.css" />
+
+    <!-- external js -->
+    <script src="cv_template.js"></script>
   </head>
   <body>
     <!-- code start -->
 
     <!-- navbar start -->
-    <nav class="navbar sticky-top bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Sticky top</a>
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+      <div class="container">
+        <!-- logo -->
+         <a class="navbar-brand" href="#">Logo</a> <!-- Burası navbar da en soldaki yer  -->
+
+         <!-- button toggler -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- navbar menu -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav m-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Ana Sayfa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Hakkımda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Eğitimler</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Deneyimler</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Yetenekler</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Bana ulaş</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
+
     <!-- navbar ends -->
 
     <!-- header start -->
