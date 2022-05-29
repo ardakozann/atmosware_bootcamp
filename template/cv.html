@@ -56,7 +56,7 @@
 
     <!-- navbar start -->
 
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar fixed-top shadow navbar-expand-lg navbar-light bg-light">
       <div class="container">
         <!-- logo -->
         <a class="navbar-brand m-auto" href="#"
@@ -80,22 +80,22 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav m-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Ana Sayfa</a>
+              <a class="nav-link" aria-current="page" href="#">Ana Sayfa</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">Hakkımda</a>
+              <a class="nav-link" href="#hakkimda">Hakkımda</a>
+            </li>
+            <li class="nav-item "><!-- Alert en üste çıkartıyor -->
+              <a class="nav-link " href="#egitimler">Eğitimler</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Eğitimler</a>
+              <a class="nav-link" href="#yetenekler">Yetenekler</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Deneyimler</a>
+              <a class="nav-link" href="#deneyimler">Deneyimler</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Yetenekler</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Bana ulaş</a>
+              <a class="nav-link" href="#mesajgonder">Mesaj Gönder</a>
             </li>
           </ul>
           <ul class="navbar-nav text-end">
@@ -136,7 +136,7 @@
               aria-label="Close"
             ></button>
           </div>
-          <form action="#" method="get"  autocomplete="on">
+          <form name="girisyap" action="#" method="get"  autocomplete="on">
             <div class="modal-body">
               <div class="form-group mb-3">
                 <label for="adi">İsim Soyisim</label>
@@ -185,29 +185,304 @@
       </div>
     </div>
     <!-- modal register ends -->
-    
+    <br><br><br>
     <!-- header start -->
-    <header class="btn btn-success text-end">
-      <br><br><br><br><br><br>
-      <div class="container">
+    <div id="first"> 
+      <div class="container-fluid my-auto">
         <div class="row">
-          <div class="col-6" >
-            <img src="../tutorials/picture/profil_resmi.jpg" id="hakkımda_profilresmi" alt="">
+          <div class="col-6 text-end my-auto" >
+            <img src="../tutorials/picture/profil_resmi.jpg" id="first_profilresmi" alt="">
           </div>
-          <div class="col-6 text-dark" id="hakkımda_açıklama">
-            <h1 id="hakkımda_isimsoyisim">Arda Kozan</h1>
-            <h3 id="hakkımda_iş">Software Developer</h3>
+          <div class="col-6 text-dark my-auto" id="first_aciklama">
+            <h1 id="first_isimsoyisim">Arda Kozan</h1>
+            <h3 id="first_is">Software Developer</h3>
           </div>
         </div>     
       </div>
-      <br><br><br><br><br><br>
-    </header>
+    </div>
     <!-- header ends -->
     
-    <!-- main start -->
-    <!-- main ends -->
-
+    <!-- hakkimda start -->
+    <div class="container  mb-5" id="hakkimda">
+      <div id="hakkimda_baslik" class="text-center mt-5 text-dark"><h1>Hakkımda</h1></div>
+      <div class="row mt-5">
+        <div class="col-5 text-end"><img src="../tutorials/picture/WhatsApp Image2 2018-07-21 at 17.29.06.jpeg" id="hakkimda_resim" alt=""></div>
+        <div class="col-7 my-auto" id="hakkimda_aciklama">
+          <h3 class="text-start">Elektrik Elektronik Mühendisi</h3>
+          <p>Üniversite hayatımda ingilizcemi geliştirmek amacı ile Work and Travel programına katıldım. Üniversite hayatımdan sonra elektrik sektöründe MEK PANO firmasında kalite kontrol, üretim planlama aşamalarında görev aldım. Aynı firmanın grup şirketi olan MTE System&Services firmasında trafo izleme ve gaz izleme satış ve satış sonrası teknik servis olarak görev almaktayım. Yazılıma olan ilgim dolayısıyla back-end tarafında aktif olarak kendimi geliştirmeye devam ediyorum. Bu süreçte Java ve Spring Boot öğreniyorum. Öğrendiklerimi aktif olarak github profilimde paylaşmaktayım.</p>
+          <div class="row mb-1">
+            <div class="col-6 text-start">
+              <p>İsim: Arda Kozan</p>
+            </div>
+            <div class="col-6 text-start">
+              <p>Doğum Tarihi: 11 Kasım 1997</p>
+            </div>
+          </div>
+          <div class="row mb-1">
+            <div class="col-6 text-start">
+              <p>Eğitim: Lisans Mezun</p>
+            </div>
+            <div class="col-6 text-start">
+              <p>Deneyim: 1 Yıl</p>
+            </div>
+          </div>
+          <div class="row mb-1">
+            <div class="col-6 text-start">
+              <p>Telefon: +90 539 497 85 25</p>
+            </div>
+            <div class="col-6 text-start">
+              <p>E-Posta: ardakozan97@gmail.com</p>
+            </div>
+          </div>
+          <div class="row mb-1">
+            <div class="col-6 text-start">
+              <p>Adres: Ankara, Türkiye</p>
+            </div>
+            <div class="col-6 text-start">
+              <p>Github: <a rel="stylesheet" href="https://www.github.com/ardakozann" target="_blank">ardakozann</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- hakkimda ends -->
+    <div class="container"><hr></div>
+    <!-- egitimler start -->
+    <div class="container mb-5" id="egitimler">
+      <div id="egitimler_baslik" class="text-center mt-5 text-dark"><h1>Eğitimler</h1></div>
+      <div class="row mt-5">
+        <div class="col-6" id="okul">
+          <ul style="list-style-type:none;">
+            <li>
+              <h4 class="text-dark mt-2">Lisans</h4>
+              <h5>Kırıkkale Üniversitesi</h5>
+              <h6>Not ortalaması: 2,83/4,00 | 2015-2020</h6>
+            </li>
+            <hr>
+            <li>
+              <h4 class="text-dark mt-4">Lise</h4>
+              <h5>Gazi Çiftliği Lisesi</h5>
+              <h6>Not ortalaması: 78,19/100 | 2011-2015</h6>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6" id="kurs">
+          <ul style="list-style-type:none;">
+            <li>
+              <h4 class="text-dark mt-2">Bootcamp</h4>
+              <h5>Java Spring Boot</h5>
+              <h6>Turkcell Geleceği Yazanlar | Ocak 2022 - Nisan 2022</h6>
+            </li>
+            <hr>
+            <li>
+              <h4 class="text-dark mt-4">Genel İngilizce</h4>
+              <h5>Intermediate</h5>
+              <h6>ODTÜ | 2018</h6>
+            </li>
+            <hr>
+            <li>
+              <h4 class="text-dark mt-4">Genel İngilizce</h4>
+              <h5>Pre-Intermediate</h5>
+              <h6>ODTÜ | 2017</h6>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- egitimler ends -->
+    <div class="container"><hr></div>
+    <!-- yetenekler start -->
+    <div class="container mb-5" id="yetenekler">
+      <div id="yetenekler_baslik" class="text-center mt-5 text-dark"><h1>Yetenekler</h1></div>
+      <div class="row mt-5">
+        <div class="col-6 text-dark" id="yetenekler_sol">
+          <ul style="list-style-type:none;">
+            <li>
+              <div class="float-start" style="display:inline"><b>HTML</b></div>
+              <div class="float-end" style="display:inline"><b>10%</b></div>
+              <br>
+              <div class="progress">
+                <div class="progress-bar bg-primary" role="progressbar"
+                aria-valuemin="0" aria-valuemax="100" style="width:10%">
+                </div>
+              </div>
+            </li>
+            <li class="mt-4">
+              <div class="float-start" style="display:inline"><b>Bootstrap</b></div>
+              <div class="float-end" style="display:inline"><b>10%</b></div>
+              <br>
+              <div class="progress">
+                <div class="progress-bar bg-warning" role="progressbar"
+                aria-valuemin="0" aria-valuemax="100" style="width:10%">
+                </div>
+              </div>
+            </li>
+            <li class="mt-4">
+              <div class="float-start" style="display:inline"><b>PostgreSQL</b></div>
+              <div class="float-end" style="display:inline"><b>7%</b></div>
+              <br>
+              <div class="progress">
+                <div class="progress-bar bg-danger" role="progressbar"
+                aria-valuemin="0" aria-valuemax="100" style="width:7%">
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 text-dark" id="yetenekler_sag">
+          <ul style="list-style-type:none;">
+            <li>
+              <div class="float-start" style="display:inline"><b>CSS</b></div>
+              <div class="float-end" style="display:inline"><b>10%</b></div>
+              <br>
+              <div class="progress">
+                <div class="progress-bar bg-success" role="progressbar"
+                aria-valuemin="0" aria-valuemax="100" style="width:10%">
+                </div>
+              </div>
+            </li>
+            <li class="mt-4">
+              <div class="float-start" style="display:inline"><b>Java Spring Boot</b></div>
+              <div class="float-end" style="display:inline"><b>15%</b></div>
+              <br>
+              <div class="progress">
+                <div class="progress-bar bg-dark" role="progressbar"
+                aria-valuemin="0" aria-valuemax="100" style="width:15%">
+                </div>
+              </div>
+            </li>
+            <li class="mt-4">
+              <div class="float-start" style="display:inline"><b>JUnit Test</b></div>
+              <div class="float-end" style="display:inline"><b>5%</b></div>
+              <br>
+              <div class="progress">
+                <div class="progress-bar bg-info" role="progressbar"
+                aria-valuemin="0" aria-valuemax="100" style="width:5%">
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- yetenekler ends -->
+    <div class="container"><hr></div>
+    <!-- deneyimler start -->
+    <div class="container" id="deneyimler">
+      <div id="deneyimler_baslik" class="text-center mt-5 text-dark"><h1>Deneyimler</h1></div>
+      <div id="deneyimler_ilksatir" class="row">
+        <div class="col-4">
+          <div class="card" style="width: 18rem;">
+            <img src="../tutorials/picture/1644947890269.jpg" class="card-img-top" alt="">
+            <hr>
+            <div class="card-body">
+              <h5 class="card-title text-dark">Software Developer</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Mayıs 2022 - Devam</h6>
+              <p class="card-text">Backend tarafında Java ve PostgreSQL üzerine çalışıyorum.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card" style="width: 18rem;">
+            <img src="../tutorials/picture/1600177882373.jpg" class="card-img-top" alt="">
+            <hr>
+            <div class="card-body">
+              <h5 class="card-title text-dark">Saha Mühendisi</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Kasım 2021 - Mayıs 2022</h6>
+              <p class="card-text">Trafo izleme ve gaz izleme sistemleri satış ve satış sonrası teknik servis görevinde yer aldım.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card" style="width: 18rem;">
+            <img src="../tutorials/picture/1599122791542.jpg" class="card-img-top" alt="">
+            <hr>
+            <div class="card-body">
+              <h5 class="card-title text-dark">Kalite Kontrol Mühendisi</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Mayıs 2021 - Kasım 2021</h6>
+              <p class="card-text">Pano imalat sektöründe; kalite kontrol, üretim planlama gibi alanlarda aktif olarak rol aldım.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div id="deneyimler_ikincisatir" class="row">
+        <div class="col-4">
+          <div class="card" style="width: 18rem;">
+            <img src="../tutorials/picture/1528783089578.jpg" class="card-img-top" alt="">
+            <hr>
+            <div class="card-body">
+              <h5 class="card-title text-dark">Cankurtaran</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Haziran 2019 - Eylül 2019</h6>
+              <p class="card-text">İngilizcemi geliştirme amacı ile Work And Travel programına katıldım.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card" style="width: 18rem;">
+            <img src="../tutorials/picture/1574073096935.jpg" class="card-img-top" alt="">
+            <hr>
+            <div class="card-body">
+              <h5 class="card-title text-dark">Stajyer Mühendis</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Temmuz 2018 - Ağustos 2018</h6>
+              <p class="card-text">Yazılım alanında Java geliştirme üzerine staj yaptım.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card" style="width: 18rem;">
+            <img src="../tutorials/picture/1613042372410.jpg" class="card-img-top" alt="">
+            <hr>
+            <div class="card-body">
+              <h5 class="card-title text-dark">Stajyer Mühendis</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Temmuz 2017 - Ağustos 2017</h6>
+              <p class="card-text">Elektrik dağıtım alanında staj yaptım.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- deneyimler ends -->
+    <div class="container"><hr></div>
+    <!-- bana ulas start -->
+    <div class="container" id="mesajgonder">
+      <div id="mesajgonder_baslik" class="text-center mt-5 text-dark"><h1>Mesaj Gönder</h1></div>
+      <div class="row mt-5">
+        <div class="col-8 mx-auto">
+          <form action="#" name="mesajgonderildi" id="mesajgonder">
+            <div class="row">
+              <div class="col-6" id="div_mesajgonder_isim">
+                  <input type="text" class="form-control mt-4 mb-4" id="mesajgonder_isim" placeholder="İsminizi giriniz."
+                      required="required" data-validation-required-message="Lütfen isminizi giriniz." />
+              </div>
+              <div class="col-6" id="div_mesajgonder_eposta">
+                  <input type="email" class="form-control mt-4 mb-4" id="mesajgonder_eposta" placeholder="E-posta adresinizi giriniz."
+                      required="required" data-validation-required-message="Lütfen e-posta adresinizi giriniz." />
+              </div>
+            </div>
+            <div class="" id="div_mesajgonder_icerik">
+              <input type="text" class="form-control py-3 px-4" id="mesajgonder_eposta" placeholder="Mesajınızı yazınız."
+                  required="required" data-validation-required-message="Lütfen mesajınızı yazınız." />
+            </div>
+            <br>
+            <button class="btn btn-success" type="submit" id="mesajgonder_buton">Gönder</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- bana ulas ends -->
+    <br>
     <!-- footer start -->
+    <footer class="">
+      <div class="container-fluid">
+        <div class="text-center mb-4">
+          <a href="https://www.twitter.com" class="btn btn-light" id="logo_twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/ardakozan/" class="btn btn-light" id="logo_linkedin"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com" class="btn btn-light" id="logo_instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.github.com/ardakozann" class="btn btn-light" id="logo_github"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+    </footer>
     <!-- footer ends -->
 
     <!-- code ends -->

@@ -2,10 +2,16 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
 }
 
 html{
     font-size: 15px;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    color: #6c757d;
 }
 
 #logo{
@@ -13,22 +19,71 @@ html{
     border-radius: 50%;
 }
 
-header{
-    background-color: purple;
+#first{
+    background-color: #0BCEAF;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
 }
 
-#hakkımda_profilresmi{
-    margin-top: 6rem;
-    margin-left: 10rem;
+#first_profilresmi{
+    margin-right: 4rem;
     width: 20rem;
     border-radius: 50%;
 }
 
-#hakkımda_açıklama{
-    margin-top: 10rem;
+ #first_aciklama{
+    padding-left: 4rem;
+} 
+
+#hakkimda_resim{
+    width: 25rem;
+    margin-left: 15rem;
 }
 
+#hakkimda_aciklama{
+    padding-left: 7rem;
+}
 
+a:link,a:visited {
+    color: #6c757d;
+  }
 
+#okul{
+    padding-left: 10rem;
+    padding-right: 2rem;
+}
 
+#kurs{
+    padding-left: 2rem;
+    padding-right: 10rem;
+}
+
+#yetenekler_sol{
+    padding-left: 10rem;
+    padding-right: 2rem;
+}
+
+#yetenekler_sag{
+    padding-left: 2rem;
+    padding-right: 10rem;
+}
+
+#deneyimler_ilksatir, #deneyimler_ikincisatir{
+    padding-left: 6.5rem;
+}
+
+#div_mesajgonder_isim, #div_mesajgonder_eposta{
+
+    display: inline;
+}
+
+#mesajgonder_buton{
+    margin-left: 26rem;
+}
+
+footer{
+    background-color: #0BCEAF;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
 
