@@ -8,10 +8,27 @@ html{
     font-size: 15px;
 }
 
-#logo_id{
-    width: 5rem;
+#logo{
+    width: 4rem;
     border-radius: 50%;
 }
-p{
-    color: blueviolet;
+
+header{
+   
 }
+
+#hakkımda_profilresmi{
+    margin-top: 6rem;
+    margin-left: 10rem;
+    width: 20rem;
+    border-radius: 50%;
+}
+
+#hakkımda_açıklama{
+    margin-top: 10rem;
+}
+
+
+
+
+

@@ -56,12 +56,15 @@
 
     <!-- navbar start -->
 
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
       <div class="container">
         <!-- logo -->
-         <a class="navbar-brand" href="#">Logo</a> <!-- Burası navbar da en soldaki yer  -->
+        <a class="navbar-brand m-auto" href="#"
+          ><img id="logo" src="../tutorials/picture/favicon.png" alt=""
+        /></a>
+        <!-- Burası navbar da en soldaki yer  -->
 
-         <!-- button toggler -->
+        <!-- button toggler -->
         <button
           class="navbar-toggler"
           type="button"
@@ -80,19 +83,31 @@
               <a class="nav-link active" aria-current="page" href="#">Ana Sayfa</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Hakkımda</a>
+              <a class="nav-link active" href="#">Hakkımda</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Eğitimler</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link">Deneyimler</a>
+              <a class="nav-link" href="#">Deneyimler</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link">Yetenekler</a>
+              <a class="nav-link" href="#">Yetenekler</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link">Bana ulaş</a>
+              <a class="nav-link" href="#">Bana ulaş</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav text-end">
+            <li class="nav-item">
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#login_tab"
+              >
+                <i class="fa-solid fa-right-to-bracket"></i>
+              </button>
             </li>
           </ul>
         </div>
@@ -101,9 +116,94 @@
 
     <!-- navbar ends -->
 
+    <!-- modal register start -->
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="login_tab"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Üye Girişi</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <form action="#" method="get"  autocomplete="on">
+            <div class="modal-body">
+              <div class="form-group mb-3">
+                <label for="adi">İsim Soyisim</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="İsim Soyisim"
+                  id="adi"
+                  required
+                  autofocus
+                />
+              </div>
+              <div class="form-group mb-3">
+                <label for="email">E-Posta</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="E-Posta"
+                  id="email"
+                  required
+                />
+              </div>
+              <div class="form-group mb-3">
+                <label for="password">Şifre</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  placeholder="Şifre"
+                  id="password"
+                  required
+                />
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Kapat
+              </button>
+              <input type="submit" class="btn btn-primary" value="Giriş yap">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- modal register ends -->
+    
     <!-- header start -->
+    <header class="btn btn-success text-end">
+      <br><br><br><br><br><br>
+      <div class="container">
+        <div class="row">
+          <div class="col-6" >
+            <img src="../tutorials/picture/profil_resmi.jpg" id="hakkımda_profilresmi" alt="">
+          </div>
+          <div class="col-6 text-dark" id="hakkımda_açıklama">
+            <h1 id="hakkımda_isimsoyisim">Arda Kozan</h1>
+            <h3 id="hakkımda_iş">Software Developer</h3>
+          </div>
+        </div>     
+      </div>
+      <br><br><br><br><br><br>
+    </header>
     <!-- header ends -->
-
+    
     <!-- main start -->
     <!-- main ends -->
 
