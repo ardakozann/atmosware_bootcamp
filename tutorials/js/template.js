@@ -116,5 +116,8 @@
 
 /////////////////////////////////////////////////////////
 //escape character
-console.log("\"");
-console.log("'");
+// console.log("\""); // " kullanmak için başına \ koyarak kullanabiliriz.
+// console.log("'");
+
+/////////////////////////////////////////////////////////
+//Math
