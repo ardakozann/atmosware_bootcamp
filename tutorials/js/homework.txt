@@ -1,0 +1,3 @@
+libraries(kütüphane) ile framework arasındaki fark
+JDK ile SDK arasındaki fark
+fast-forward ile no-fast-forward arasındaki fark
