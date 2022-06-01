@@ -1,3 +1,18 @@
 libraries(kütüphane) ile framework arasındaki fark
 JDK ile SDK arasındaki fark
 fast-forward ile no-fast-forward arasındaki fark
+
+
+runtime error, compiler error, syntax error nedir ?
+
+kullanıcı tarafından girilen bir kelimenin
+S-1) Kaç karakterlidir ?
+S-2) Boşluklar alınarak kaç karakterlidir ?
+S-3) Bütün kelimeyi küçük harfle göstermek ?
+S-4) Bütün kelimeyi büyük harfler göstermek ?
+S-5) İlk harf nedir ?
+S-6) Girdiğiniz kelime java ile başlıyor mu ?
+S-7) Girdiğiniz kelimenin sonuna "-ben js öğreniyorum" ?
+S-8) Girdiğiniz 0 ile 4 arasındaki indexi ekranda gösterin ?
+S-9) Kullanıcıdan alınan başka bir kelimeyle birince olan kelimeyleyle yer değiştirmesi ?
+
