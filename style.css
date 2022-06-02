@@ -5,6 +5,8 @@ project year: 2022
 project version: v.1
 */
 /* config file */
+/* ################################################ */
+ */
 
 *{
     padding: 0;
@@ -14,8 +16,7 @@ project version: v.1
 
 body{
     font-family: 'Crimson Text', serif;
-     background:#f6f5f2; 
-    color:#232221;
+    /* kendisini annesine göre ayarlasın */
     position: relative;
 }
 
@@ -33,7 +34,11 @@ a{
 
 p{
     text-align: justify;
+    margin-left: .7rem;
+    margin-right: .7rem;
 }
+
+/* ################################################ */
 
 .line_clamp4 {
     display: -webkit-box;
@@ -56,11 +61,19 @@ p{
     overflow: hidden;
 }
 
+/* ################################################ */
+
 /* nav */
 #logo_id{
     width: 5rem;
     border-radius: 50%;
 }
+
+#logo_id:hover{
+    box-shadow: 1px 1px 1px 4px rgba(255, 255, 255, .8);
+}
+
+/* ################################################ *
 
 /* header */
 header{
