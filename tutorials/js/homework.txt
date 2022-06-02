@@ -16,3 +16,8 @@ S-7) Girdiğiniz kelimenin sonuna "-ben js öğreniyorum" ?
 S-8) Girdiğiniz 0 ile 4 arasındaki indexi ekranda gösterin ?
 S-9) Kullanıcıdan alınan başka bir kelimeyle birince olan kelimeyleyle yer değiştirmesi ?
 
+stack memory - heap memory arasındaki fark
+git CVCS (central version control system) - DVCS (distributed version control system) aralarındaki fark
+senkron asenkron nedir ? aralarındaki fark ? javascript senkron mu asenkron mu ?
+Compiler ve interpreter yapıları nedir ? javascript compiler mı interpreter mı ?
+for ile while arasındaki fark ?

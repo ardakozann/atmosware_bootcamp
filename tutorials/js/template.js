@@ -242,19 +242,180 @@
 
 //JSON nedir ?
 
-var obje={
-    "adi":"Arda",
-    "soyadi":"Kozan"
+// var obje={
+//     "adi":"Arda",
+//     "soyadi":"Kozan"
+// }
+
+// document.write(JSON.stringify(obje)+"<br/>");
+
+// var objeToString=JSON.stringify(obje);
+
+// document.write(objeToString+"<br/>");
+
+// var objeName=objeToString.substring(objeToString.indexOf(":")+2,objeToString.indexOf(",")-1);
+// //var searchResult=objeToString.search('Arda'); //başladığı indexi söyler
+// //var objeName=objeToString.substring(objeToString.indexOf(":")+2,objeToString.indexOf(",")-1);
+// var objeSurname=objeToString.substring(objeToString.lastIndexOf(":")+2,objeToString.length-2);
+
+// document.write(objeName + " " + objeSurname);
+// document.write("<br><br>")
+// //JSON.parse ne demek bak
+// var dinamic = JSON.stringify(obje);
+// var parse=JSON.parse(dinamic);
+
+// var name=parse.adi;
+// var surname=parse.soyadi;
+
+// document.write("<br><br>")
+// document.write(name + " " + surname);
+
+//////////////////////////////////////////////////////////////
+// //Fonskiyon:
+// //1-) returnsuz, parametresiz function
+// function functionName1(){
+//     document.write("<br>" + "returnsuz parametresiz function")
+// }
+
+// functionName1();
+
+// //2-) returnsuz, parametreli function
+// function functionName2(ekmekTuru) {
+//     document.writeln("<br>" + "returnsuz, parametreli function " + ekmekTuru);
+// }
+
+// functionName2("Trabzon Ekmeği");
+
+// //3-) returnlu, parametresiz function
+// function functionName3() {
+//     return "returnlu, parametresiz function";
+// }
+// var temp3 = functionName3();
+// document.writeln("<br>" + temp3);
+
+// //4-) returnlu, parametreli function
+// function functionName4(money) {
+//     var count=money-6;
+//     return "returnlu, parametreli function Kalan Para: " + count;
+// }
+// var temp4 = functionName4(200);
+// document.writeln("<br>" + temp4);
+
+///////////////////////////////////////////////////////////////////////////////////////
+// //setTimeOut()
+// function merhaba(){
+//     document.writeln("<br>" + "1. function");
+// }
+
+// //setTimeout(merhaba,3000); //setTimeOut u araştır.
+// merhaba();
+
+// function merhaba2(){
+//     document.writeln("<br>" + "2. function");
+// }
+
+// merhaba2();
+ 
+/////////////////////////////////////////////////////////////////////////////////////
+//try catch: exception handling
+//  try {
+//    alert44('Merhabalar')
+//  } catch (err) {
+//    document.writeln('<br>' + err.message);
+//    document.writeln('<br>' + err.name);
+//  } finally {
+//    document.write('<br>' + 'db.close()')
+//  }
+//  document.writeln('<br>' + 'diğer satır')
+
+////////////////////////////////////////////////////////////////////////////////
+//conditional:
+//if-else
+// var number="4";
+// if(number===4){
+//     document.write("<br>"+"eşittir");
+// }else{
+//     document.write("<br>"+"değildir");
+// }
+// //if-else
+// if(number===4)
+//     document.write("<br>"+"eşittir");
+// else
+//     document.write("<br>"+"değildir");
+
+// //ternary
+// var ternary = (number==4) ? "eşittir":"değildir";
+// document.write("<br>"+ternary);
+
+// //if-elseif-else
+// var day="perşembe";
+// if(day==="pazartesi"){
+//     document.write("<br>"+"1-pazartesi");
+// }else if(day==="sali"){
+//     document.write("<br>"+"2-sali");
+// }else if(day==="çarşamba"){
+//     document.write("<br>"+"3-çarşamba");
+// }else if(day==="perşembe"){
+//     document.write("<br>"+"4-perşembe");
+// }else if(day==="cuma"){
+//     document.write("<br>"+"5-cuma");
+// }else if(day==="cumartesi"){
+//     document.write("<br>"+"6-cumartesi");
+// }else if(day==="pazar"){
+//     document.write("<br>"+"7-pazar");
+// }else{
+//     document.write("<br>"+"gün yanlış çalışıldı");
+// }
+
+//     //switch-case
+// switch (day) {
+//     case "pazartesi":
+//         document.write("<br>"+"1-pazartesi");
+//         break;
+//     case "pazartesi":
+//         document.write("<br>"+"1-pazartesi");
+//         break;
+//     case "pazartesi":
+//         document.write("<br>"+"1-pazartesi");
+//         break;
+//     case "pazartesi":
+//         document.write("<br>"+"1-pazartesi");
+//         break;
+//     case "pazartesi":
+//         document.write("<br>"+"1-pazartesi");
+//         break;
+//     case "pazartesi":
+//         document.write("<br>"+"1-pazartesi");
+//         break;
+//     case "pazartesi":
+//         document.write("<br>"+"1-pazartesi");
+//         break;
+
+//     default:
+//         document.write("<br>"+"gün yanlış çalışıldı");
+//         break;
+// }
+//return   : bir şey döndürmek
+//break    : döngüyü kırmak
+//continue : sadece o şart için çalışma, diğer şartlar için çalış.
+
+//////////////////////
+//Loop(döngüler)
+//iterative for
+//1 artırmak => i++, i=i+1, i+=1
+
+var sum=0;
+for (var i = 0; i <= 10; i++) {
+//    document.writeln("<br>"+i);
+    sum=sum+i;
 }
+document.write("<br>"+sum);
 
-document.write(JSON.stringify(obje)+"<br/>");
-
-var objeToString=JSON.stringify(obje);
-
-document.write(objeToString+"<br/>");
-
-var objeName=objeToString.substring(objeToString.indexOf(":")+2,objeToString.indexOf(",")-1);
-var objeSurname=objeToString.substring(objeToString.lastIndexOf(":")+2,objeToString.length-2);
-
-document.write(objeName + " " + objeSurname);
-
+//while
+var sum2=0;
+var x=1;
+while( x <= 10){
+    sum2=sum2+x;
+    x++;
+}
+document.write("<br>"+sum2);
