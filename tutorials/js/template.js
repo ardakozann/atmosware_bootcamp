@@ -423,167 +423,211 @@
 //ÖDEV
 //Örnek: 1 ile kullanıcının vereceği (prompt) bitiş sayısına göre
 //kullancı: 5 verdi diyelim 1<=X<=5
-// var number;
-// number=prompt("Sayı giriniz");
-// document.write("Verilen sayı : "+number+'<br>');
-// console.log(1)
-// if(isNumberSecretKey(number) && checkIfNumberUnder1(number)){
-//     console.log(1)
-//     howManyNumbers(number);
-//     console.log(2)
-//     plusAllNumber(number);
-//     console.log(3)
-//     oddNumber(number);
-//     console.log(4)
-//     plusOddNumber(number);
-//     console.log(5)
-//     showOddNumber(number);
-//     console.log(6)
-//     evenNumber(number);
-//     console.log(7)
-//     plusEvenNumber(number);
-//     console.log(8)
-//     showEvenNumber(number);
-// }
-
 // //1.adım: kaç tane sayı var ?
-// function howManyNumbers(number){
+// //2.adım: sayı toplamları var ?
+// //3.adım: kaç tane tek  sayı var ?
+// //4.adım: tek sayılar toplamı ?
+// //5.adım: tek sayılar gösterelim ?
+// //6.adım: kaç tane çift  sayı var ?
+// //7.adım: çift sayılar toplamı ?
+// //8.adım: çift sayılar gösterelim ?
+// //Eğer verilen sayılarda 7 sayısı varsa bunu eklemesin (continue)
+// //Eğer bitiş sayısı 100 fazla ise 100'e kadar olanlar toplansın (break)
+// //Eğer kullanıcı başlangıç sayıdan küçük girerse uyaralım başlangıçtan büyük girmesini isteyelim
+// //Eğer kullanıcı secret-key girerse yani 44 sayısını girerse program çalışmadan dursun 
+// main();
+
+// function main(){
+//     var number;
+//     number= Number(prompt("Sayı giriniz"));
+//     if(isNumberSecretKey(number) && checkIfNumberUnder1(number)){
+//         document.write("Verilen sayı : "+number+'<br>');
+//         oddNumber(number);
+//     }
+// }
+// function oddNumber(number){ //tek sayılar için
+//     var oddNumbers="0";
+//     var oddNumberOfNumber=0;
+//     var plusOdd=0;
+
+//     var evenNumberOfNumber=0;
+//     var plusEven=0;
+//     var evenNumbers="0";
+
 //     var numberOfNumber=0;
-//     while ( numberOfNumber <= number) {
-//         if(checkIfExist7){
+//     var plus=0;
+    
+//     for(var i=1; i <= number; i++){
+//         if(checkIfExist7(i)){
 //             continue;
 //         }
-//         if(checkIfMore100){
+//         if(checkIfMore100(i)){
 //             break;
+//         }
+//         if(i%2==0){
+//             oddNumberOfNumber++;
+//             plusOdd+=i;
+//             oddNumbers=String(oddNumbers).concat('-' + i);
+//         }
+//         if(i%2==1){
+//             evenNumbers=String(evenNumbers).concat('-' + i);
+//             evenNumberOfNumber++;
+//             plusEven+=i;
 //         }
 //         numberOfNumber++;
-//     }
-//     document.write("Sayı adeti : "+numberOfNumber+'<br>');
-// }
-// //2.adım: sayı toplamları var ?
-// function plusAllNumber(number) {
-//     var plus=0;
-//     for(var i=1 ; i<=number ; i++){
-//         if(checkIfExist7){
-//             continue;
-//         }
-//         if(checkIfMore100){
-//             break;
-//         }
 //         plus+=i;
 //     }
+//     document.write("Sayı adeti : "+numberOfNumber+'<br>');
 //     document.write("Sayıların toplamı : "+plus+'<br>');
+
+//     document.write('<br>'+"Tek sayılar : "+oddNumbers+'<br>');
+//     document.write('<br>'+"Tek sayı adeti : "+oddNumberOfNumber+'<br>');
+//     document.write('<br>'+"Tek sayıların toplamı : "+plusOdd+'<br>');
+
+//     document.write('<br>'+"Çift sayılar : "+evenNumbers+'<br>');
+//     document.write('<br>'+"Çift sayı adeti : "+evenNumberOfNumber+'<br>');
+//     document.write('<br>'+"Çift sayıların toplamı : "+plusEven+'<br>');
 // }
-// //3.adım: kaç tane tek  sayı var ?
-// function oddNumber(number){
-//     var oddNumberOfNumber=0;
-//     while( oddNumberOfNumber <= number){
-//         if(number%2==0 || checkIfExist7){
-//             continue;
-//         }
-//         if(checkIfMore100){
-//             break;
-//         }
-//         oddNumberOfNumber++;
-//     }
-//     document.write("Tek sayı adeti : "+oddNumberOfNumber+'<br>');
-// }
-// //4.adım: tek sayılar toplamı ?
-// function plusOddNumber(number){
-//     var plusOdd=0;
-//     for(var i=1 ; i<=number ; i++){
-//         if(number%2==0 || checkIfExist7){
-//             continue;
-//         }
-//         if(checkIfMore100){
-//             break;
-//         }
-//         plusOdd+=i;
-//     }
-//     document.write("Tek sayıların toplamı : "+plusOdd+'<br>');
-// }
-// //5.adım: tek sayılar gösterelim ?
-// function showOddNumber(number){
-//     document.write("Tek sayılar : 0");
-//     for(var i=1; i<=number; i++){
-//         if(number%2==0 || checkIfExist7){
-//             continue;
-//         }
-//         if(checkIfMore100){
-//             break;
-//         }
-//         document.write("-"+i);
-//     }
-//     document.write('<br>');  
-// }
-// //6.adım: kaç tane çift  sayı var ?
-// function evenNumber(number){
-//     var evenNumberOfNumber=0;
-//     while( evenNumberOfNumber <= number){
-//         if(number%2==1){
-//             continue;
-//         }
-//         if(checkIfMore100){
-//             break;
-//         }
-//         evenNumberOfNumber++;
-//     }
-//     document.write("Çift sayı adeti : "+evenNumberOfNumber+'<br>');
-// }
-// //7.adım: çift sayılar toplamı ?
-// function plusEvenNumber(number){
-//     var plusEven=0;
-//     for(var i=1 ; i<=number ; i++){
-//         if(number%2==1){
-//             continue;
-//         }
-//         if(checkIfMore100){
-//             break;
-//         }
-//         plusEven+=i;
-//     }
-//     document.write("Çift sayıların toplamı : "+plusEven+'<br>');
-// }
-// //8.adım: çift sayılar gösterelim ?
-// function showEvenNumber(number){
-//     document.write("Çift sayılar : 0");
-//     for(var i=1; i<=number; i++){
-//         if(number%2==1 ){
-//             continue;
-//         }
-//         if(checkIfMore100){
-//             break;
-//         }
-//         document.write("-"+i);
-//     }
-//     document.write('<br>');  
-// }
-// //Eğer verilen sayılarda 7 sayısı varsa bunu eklemesin (continue)
-// function checkIfExist7(number){
-//     if(number >= 7){
+// function checkIfExist7(number){ //sayıda 7 var mı kontrolü
+//     if(number == 7){
 //         return true;
 //     }
 //     return false;
 // }
-// //Eğer bitiş sayısı 100 fazla ise 100'e kadar olanlar toplansın (break)
-// function checkIfMore100(number){
-//     if(number > 100){
+// function checkIfMore100(number){ //sayı 100'den büyük mü kontrolü
+//     if(number >= 100){
 //         return true;
 //     }
 //     return false;
 // }
-// //Eğer kullanıcı başlangıç sayıdan küçük girerse uyaralım başlangıçtan büyük girmesini isteyelim
-// function checkIfNumberUnder1(number) {
-//     if(number<1){
+// function checkIfNumberUnder1(number) { //sayı 1'den küçük mü kontrolü
+//     if(number<=1){
 //         alert("Başlangıç sayısından büyük bir değer giriniz.");
 //         return false;
 //     }
 //     return true;
 // }
-// //Eğer kullanıcı secret-key girerse yani 44 sayısını girerse program çalışmadan dursun 
-// function isNumberSecretKey(number) {
+// function isNumberSecretKey(number) { //sayı 44 mü kontrolü
 //     if(number==44){
+//         alert("Secret Key girildi, program durduruldu");
 //         return false;
 //     }
 //     return true;
 // }
+////////////////////////////////////////////////////////////////////////////
+//Date
+//Date get()
+// var tarih=new Date();
+// document.write('<br>'  +"Gün: "+ tarih.getDate());
+// document.write('<br>'  +"Yıl: "+ tarih.getFullYear());
+// document.write('<br>'  +"Dakika: "+ tarih.getMinutes());
+// document.write('<br>'  +"AY (0): "+ tarih.getMonth());
+// document.write('<br>'  +"<br>");
+
+// function getDateHoursControl(){
+//     //Zaman Uygulaması
+//   var hour=new Date().getHours();
+//   if(hour>=13){
+//     document.write('<br>'  +"Öğlededen Sonra " + hour);
+//   }else{
+//     document.write('<br>'  +"Öğlededen Önce " + hour);
+//   }
+// }
+// getDateHoursControl()
+
+////////////////////////////////////////////////////////////////////
+//Javascript single thread
+
+// function bodyFunction() {
+//     document.writeln('<br>'+"3 saniye sonra geldi");
+// }
+// setTimeout(merhaba1,3000);
+
+// //1-) callback function
+// function ikinci(value) {
+//     document.writeln('<br>'+"ikinci fonksiyon çalıştı" + value);
+// }
+// //2-) ana fonksiyon
+// function birinci(number1,number2,callback){
+//     var result = number1*number2;
+//     callback(result);
+// }
+// birinci(4,6,ikinci);
+//++++++++++++++++++++++++
+// //2-) Immedia function: fonskiyonu çağırmadan gelsin
+// (function deneme() {
+//     document.writeln('<br>'+"deneme");
+// })();
+
+//////////////////////////////////////////////////////////////////////
+//Dizi
+// var array=[1,5,true,"merhabalar",55];
+// console.log(array);
+// //iterative for
+// for(let i = 0; i < array.length; i++){
+//     document.write('<br>'+array[i]);
+// }
+// document.write('<br>');
+// //for-in (for over index) for over kullanırsak indis yapılarını verir
+// for (temp in array){
+//     document.write('<br>'+temp+"==>"+array[temp]);
+
+// }
+// document.write('<br>');
+//for-of (for over members) for in kullanırsak sırayla dizi içerisini verir
+// for (temp of array){
+//     document.write('<br>'+temp);
+// }
+// document.write('<br>');
+// //++++++++++++++++++++++++++++++++++
+// //Dizi fonksiyonları
+// //push() var olan dizinin son elemanına dizi eklemek
+// array.push("son");
+
+// for (temp of array){
+//     document.write('<br>'+temp);
+// }
+
+// document.write('<br>');
+
+// //unshift() var olan dizinin ilk elemanına dizi eklemek
+// array.unshift("önce");
+
+// for (temp of array){
+//     document.write('<br>'+temp);
+// }
+
+// document.write('<br>');
+
+// //ÇIKARMA pop() sondaki elemanı çıkarır.
+// array.pop();
+
+// for (temp of array){
+//     document.write('<br>'+temp);
+// }
+
+// document.write('<br>');
+
+// //ÇIKARMA shift() ilk elemanı çıkarır.
+// array.shift();
+
+// for (temp of array){
+//     document.write('<br>'+temp);
+// }
+
+//++++++++++++++++4444444
+//sort(): küçükten büyüğe sıralama yapar
+var array=["malatya","istanbul","ankara","izmir","muş","bitlis","sivas"];
+
+array.sort();
+for(var temp of array){
+    document.write('<br>'+temp);
+}
+
+document.write('<br>');
+
+//reverse(): sıralama yapmaz, tersine çevirir
+array.reverse();
+for(var temp of array){
+    document.write('<br>'+temp);
+}
