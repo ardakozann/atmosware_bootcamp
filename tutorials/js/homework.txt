@@ -21,3 +21,7 @@ git CVCS (central version control system) - DVCS (distributed version control sy
 senkron asenkron nedir ? aralarındaki fark ? javascript senkron mu asenkron mu ?
 Compiler ve interpreter yapıları nedir ? javascript compiler mı interpreter mı ?
 for ile while arasındaki fark ?
+
+Kullanıcı tarafından girilen şifre ve şifre doğrulama
+callback function
+var dizi=[] ile dizi2=new Array(); arasındaki fark
