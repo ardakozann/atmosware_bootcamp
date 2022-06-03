@@ -40,9 +40,9 @@
 <body data-bs-target="#navbar_scroll" data-bs-spy="scroll" >
     <!-- data-target=".navbar" data-offset="44" data-spy="scroll" -->
     <!-- Navbar start -->
-    <nav class="navbar fixed-top  navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background: #242524; opacity: 0.8;"><!-- bar şeffaflığı -->
         <!-- Container wrapper -->
-        <div class="container">
+        <div class="container" id="navbar_scroll">
             <!-- Navbar brand -->
             <a class="navbar-brand me-2" href="#">
                 <img src="https://s.turkcell.com.tr/SiteAssets/LandingPage/kampanya/dunyalar-senin-olsun/assets/img/logo.png"
@@ -152,7 +152,7 @@
 
 
     <!-- header start -->
-    <header>
+    <header id="header_id">
         <div class="jumbotron text-white ">
             <div class="container" style="opacity:.9">
                 <!-- div.p-5.text-center.text-white.bg-dark>h1.mb-3{Heading}+h4.mb-3{sub title}+a.btn.btn-primary{More..} -->
@@ -281,6 +281,7 @@
                 <div class="col"></div>
             </div>
         </section>
+        <a href="#header_id" id="back_top"> <i class="fa-solid fa-arrow-up"></i> Top</a>
     </main>
     <!-- main ends -->
 
