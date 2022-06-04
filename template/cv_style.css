@@ -88,9 +88,49 @@ footer{
 }
 
 @media screen and (max-width: 380px){
-    #hakkimda_resim { margin-left: 0; }
+    #first{
+        text-align: center !important;
+    }
+    #hakkimda_aciklama{
+        margin: 0;
+        padding: 0;
+        margin-top: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    #hakkimda_aciklama_baslik{
+        text-align: center !important;
+    }
+    #hakkimda_aciklama_yazi{
+        text-align: justify;
+    }
+    #hakkimda_resim {
+        margin: 0;
+        padding: 0;
+        width: 75%;
+        margin-left: 3rem;
+    }
+    
     .container{ margin-left: 0;}
     #okul { padding-left: 0; }
+    #mesajgonder_buton{ 
+        margin: 0;
+        margin-left: 5rem;}
+    #div_mesajgonder_eposta{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    #deneyimler_ilksatir, #deneyimler_ikincisatir{
+        padding-left: 2rem;
+        margin: 0;
+    }
+    .card{
+        margin: 1rem;
+    }
+    #yetenekler_sol, #yetenekler_sag{
+        padding: 0;
+    }
+
 }
 
 .card{
