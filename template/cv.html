@@ -51,13 +51,13 @@
     <!-- external js -->
     <script src="cv_template.js"></script>
   </head>
-  <body>
+  <body data-bs-target="#navbar_scroll" data-bs-spy="scroll" data-offset="50">
     <!-- code start -->
 
     <!-- navbar start -->
 
     <nav class="navbar fixed-top shadow navbar-expand-lg navbar-light bg-light">
-      <div class="container">
+      <div class="container" id="navbar_scroll">
         <!-- logo -->
         <a class="navbar-brand " href="#"
           ><img id="logo" src="./picture/favicon.png" alt=""
@@ -190,7 +190,7 @@
     <div id="first"> 
       <div class="container-fluid my-auto">
         <div class="row">
-          <div class="col-md-6 col-sm-12 text-end my-auto" id="first_profilresmi_div" >
+          <div class="col-md-6 col-sm-12 text-md-end my-auto" id="first_profilresmi_div" >
             <img src="./picture/profil_resmi.jpg" id="first_profilresmi" alt="">
           </div>
           <div class="col-md-6 col-sm-12 text-dark my-auto" id="first_aciklama">
@@ -466,10 +466,11 @@
                   required="required" data-validation-required-message="Lütfen mesajınızı yazınız." />
             </div>
             <br>
-            <button class="btn btn-success mx-sm-auto" type="submit" id="mesajgonder_buton">Gönder</button>
+            <button class="btn btn-outline-secondary" type="submit" id="mesajgonder_buton">Gönder</button>
           </form>
         </div>
       </div>
+      <a href="#first" id="back_top"><i class="fa-solid fa-arrow-up"></i></a>
     </div>
     <!-- bana ulas ends -->
     <br>
