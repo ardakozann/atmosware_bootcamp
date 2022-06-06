@@ -25,3 +25,8 @@ for ile while arasındaki fark ?
 Kullanıcı tarafından girilen şifre ve şifre doğrulama
 callback function
 var dizi=[] ile dizi2=new Array(); arasındaki fark
+
+toString() ile join() nelerdir arasındaki fark ?
+regex nedir
+slice ve splice 
+{[]} (obje içerisinde dizi) ve [{}] (dizi içerisinde obje) aynı mı ?

@@ -616,18 +616,226 @@
 // }
 
 //++++++++++++++++4444444
-//sort(): küçükten büyüğe sıralama yapar
-var array=["malatya","istanbul","ankara","izmir","muş","bitlis","sivas"];
+//sort(); küçükten büyüğe sıralama yapar
+//reverse(); diziyi ters çevirir
+//dizi.sort().reverse(); => diziyi büyükten küçüğe sıralamış olur.
+// var array=["malatya","istanbul","ankara","izmir","muş","bitlis","sivas"];
 
-array.sort();
-for(var temp of array){
-    document.write('<br>'+temp);
+// array.sort();
+// for(var temp of array){
+//     document.write('<br>'+temp);
+// }
+
+// document.write('<br>');
+
+// //reverse(): sıralama yapmaz, tersine çevirir
+// array.reverse();
+// for(var temp of array){
+//     document.write('<br>'+temp);
+// }
+
+//dizi konuları 
+function arrayValue(){
+    var dizi=["java","spring","hibernate"];
+    document.write('<br>'+dizi);
+    //dizinin ilk elemanı
+    document.write('<br>'+"dizi ilk elemanı: "+dizi[0]);
+    //dizinin son elemanı
+    document.write('<br>'+"dizi son elamanı: "+dizi[dizi.length-1]);
 }
 
-document.write('<br>');
+//arrayValue();
 
-//reverse(): sıralama yapmaz, tersine çevirir
-array.reverse();
-for(var temp of array){
-    document.write('<br>'+temp);
+//Diziyi stringe çevirme
+//concat string birleştirme
+// function arrayToString() {
+//     var dizi2=["java","spring","hibernate","MVC","Data"];
+//     dizi2.toString();
+//     document.write('<br>'+ dizi2.toString());
+//     console.log(dizi2.toString());
+//     console.log(dizi2.toString().length);
+//     console.log(dizi2.toString().concat("1 kere ekle"));
+// }
+
+// arrayToString();
+
+//Array stringe çevire join kullanarak
+
+function arrayJoin() {
+    var dizi3=['java','spring','hibernate','MVC','Data'];
+    document.write('<br>'+dizi3.join());
+    document.write('<br>'+dizi3.join(' '));
+    document.write('<br>'+dizi3.join('-'));
+
+    var value=dizi3.join();
+    document.write('<br>'+typeof value);
+    
+    var value2=dizi3.join().startsWith('j');
+    document.write('<br>'+typeof value2);
 }
+//arrayJoin();
+
+//Stringi array'e çevirmek
+function arraySplit(){
+    var dizi4="java, spring, +hibernate, MVC, Data";
+    console.log(dizi4);
+
+    var dizi5=[];
+    console.log(dizi4.split(" "));
+    dizi5=dizi4.split("+"); //+ işaretine göre parçalayacak
+    console.log(dizi5);
+}
+//arraySplit();
+
+//bilgisayar tarafından rastgele oluşturulmuş kullanıcı tarafından bitiş
+//sayısına göre sayılar oluşturulsun
+//bu sayıları bir diziye atama yapalım
+//bu sayılardan ilk eleman
+//bu sayılardan son eleman
+//bu sayıların küçükten büyüğe sıralama
+//bu sayıların büyükten küçüğe sıralama
+//bu sayıların toplamları
+//bu sayıların çift sayı toplamları
+//bu sayıların tek sayı toplamları
+//bu sayıların her birine 1 ekleyerek yeni bir dizi oluşturma
+
+// function numbers(){
+//     var length=Number (prompt("Dizi boyutunu giriniz:"));
+//     var dizi6=[length];
+//     var toplam=0;
+//     var toplamCift=0;
+//     var toplamTek=0;
+    
+//     for (var i=0; i<dizi6.length; i++){
+//         dizi6[i]=Math.floor(Math.random() * 10) + 1;
+//         //CİFT VE TEKLERİ YAP
+//     }
+//     //bu sayılardan ilk eleman
+//     document.write("İlk eleman: "+dizi6[0]+'<br>');
+//     //bu sayılardan son eleman
+//     document.write("Son eleman: "+dizi6.length-1+'<br>');
+//     //bu sayıların küçükten büyüğe sıralama
+//     document.write("Küçükten büyüğe sıralama: "+dizi6.sort()+'<br>');
+//     //bu sayıların büyükten küçüğe sıralama
+//     document.write("Büyükten küçüğe sıralama: "+dizi6.sort().reverse()+'<br>');
+//     //bu sayıların toplamları
+    
+// }
+
+//slice() ==> dizi klonlama
+// function arrayIndexClone() {
+//     var dizi=[1,2,3,4,5,6,7,8,9];
+//     console.log(dizi);
+
+//     //3 ve 3. indisten sonrasını kopyaladı
+//     console.log(dizi.slice(3));
+//     //0. ile 2.(2. indis dahil değil) indis arasını kopyalar
+//     console.log(dizi.slice(0,2));
+// }
+//arrayIndexClone();
+
+//splice() ==> diziye blok şeklinde veri ekleme veya silme
+// function arrayBlockAddDelete(){
+//     var dizi=["1","2","3","4"];
+//     //dizi arasına veri koymak için
+//     //2 kaçıncı indis, 0 herhangi bir işlem yapma ve lemon ve kiwi yi ekle
+//     console.log(dizi.splice(2,0,"Lemon","Kiwi"));
+
+    //aralık belirtme, 0 dahil 2. indis dahil değil
+    // console.log(dizi.splice(0,2));
+
+    // console.log("***********************");
+    // dizi=dizi.splice(0,3,44);
+    // console.log(dizi)
+// }
+// arrayBlockAddDelete();
+
+///////////////////////////////////////////////////////////////////
+//Object özellikleri
+//this: unutma
+//anonymous function
+
+// var arr=[];
+// console.log(arr);
+
+var person={
+    "adi":"Hamit",
+    "soyadi":"Mızrak",
+    "deneyim":9,
+    "isLogin":true,
+    "teknolojiler":["html5","css3","js","bootstrap"],
+    "adiSoyadi":function(){
+        return this.adi.toUpperCase();
+    },
+    "java":{
+        "adi":"JavaSE",
+        "db":"H2DB"
+    }
+};
+// console.log(person);
+// console.log(person.soyadi);
+// console.log(person.deneyim);
+// console.log(person.isLogin);
+// console.log(person.teknolojiler[0]);
+// console.log(person.adiSoyadi());
+// console.log(person.java.db);
+
+//Objeye sonradan veri ekleme
+// person.eklenen="Eklenen veri";
+// console.log(person.eklenen);
+
+//Liretal Template
+function esLiteralTemplate(){
+    var valueTem1="Merhabalar <br> nasılsınız <br> yeni teknolojiler öğreniyorum";
+    document.write('<br>'+valueTem1);
+    console.log(valueTem1+"\ndiğer kelime");
+
+    //multiline
+    var valueTem2=`Merhabalar
+nasılsınız`;
+    console.log(valueTem2);
+}
+//esLiteralTemplate();
+
+//2-) Interpolation `${}`
+function esLiteralInterpolation(){
+    var adi44="Hamit";
+    var soyadi44="Mızrak";
+
+    var valueInter1=adi44+"\n"+soyadi44;
+    console.log(valueInter1);
+
+    var valueInter2=`adım:${adi44} soyadım:${soyadi44}`;
+    console.log(valueInter2)
+}
+
+esLiteralInterpolation();
+
+// 3-) Html Template
+function normalHtmlTemplate(){
+    var country="Turkey";
+    var html=
+    "<ul>"+
+        "<li>"+
+            country+
+        "</li>"+
+        "<li>"+
+            country.toUpperCase()+
+        "</li>"+
+    "</ul>";
+    document.body.innerHTML=html;
+  }
+  //normalHtmlTemplate()
+  
+  function esTemplateHtmlTemplate(){
+    var country="Turkey";
+  var html=
+  `
+  <ul>
+      <li>${country}</li>
+      <li>${country}</li>
+  </ul>
+  `;
+  document.body.innerHTML=html;
+  }
+  esTemplateHtmlTemplate()
