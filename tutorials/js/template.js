@@ -840,6 +840,113 @@ var person={
 //   }
 //   esTemplateHtmlTemplate()
 
-let str = "Apple, Banana, Kiwi";
-let part = str.substring(7, 13);
-console.log(part);
+let object={
+    "adi":"Hamit",
+    "soyadi":"Mızrak",
+    "isTurkish":true,
+    "diller":2,
+    "frontend":["Html5","css3"],
+    "fullStack":function(){
+         return this.adi.toUpperCase();
+        },
+    "spring":{
+        "core":"ioc",
+        "database":"h2db",
+        "mvc":"@controller"
+    
+        }
+}
+//console.log(object);
+//console.log(object.adi+" "+object.soyadi);
+//console.log(object.fullStack());
+
+//create object attribute
+object.database="postgresql";
+//delete object attribute
+delete object.soyadi;
+
+//nested object
+//alert(object.spring.database);
+//alert(object.spring["mvc"]);
+//alert(object["spring"]["core"]);
+
+//object array
+//alert(object.frontend[1]);
+var result="";
+for(let temp in object){
+    result+=object[temp];
+}
+//alert(result)
+
+//++++++++++++++++++++++++++++++++++++44
+//object constructor
+function Student(adi, soyadi) {
+    this.adi=adi;
+    this.soyadi=soyadi;
+    console.log(this);
+}
+
+//var result = new Student("Hamit", "Mızrak");
+
+/////////////////////////////////////////////////
+function toplam() {
+    let number1=10,number2=20,sum=0;
+    sum=number1+number2;
+    console.log(sum);
+    console.error(sum);
+    console.warn(sum);
+    console.info(sum);
+}
+
+function domFunction() {
+    //alert("deneme");
+    //document.getElementById("dom_id").innerHTML="Değiştirildi.";
+    //document.getElementsByName("dom_name")[0].innerHTML="Değiştirildi.";
+    //document.getElementsByTagName("h5")[0].innerHTML="Değiştirildi.";
+    //document.getElementsByClassName("dom_class")[0].innerHTML="<b><i>Değiştirildi.</i></b>";
+    //document.getElementsByClassName("dom_class")[0].innerText="<b><i>Değiştirildi.</i></b>";
+    document.getElementsByClassName("dom_class")[0].style.color="blue";
+    document.getElementsByClassName("dom_class")[0].style.backgroundColor="black";
+    document.getElementsByClassName("dom_class")[0].style.fontSize="15px";
+    console.log(document.getElementById("a_id").getAttribute("href"));
+    document.getElementById("a_id").setAttribute("href","hhtps://www.google.com");
+}
+
+
+
+// var huawei = {
+//     marka : "Huawei",
+//     model : "P30",
+//     "deger": 600,     // Dolar 
+//     "onKamera": 8,
+//     "arkaKamera": 48 
+// };
+// var samsung = {
+//     marka : "Samsung",
+//     model : "Galaxy A70",
+//     "deger": 700,     // Dolar
+//     "onKamera": 5,
+//     "arkaKamera": 32
+// }
+
+// var telefon = {
+//     telefonAdi : function(){
+//         return this.marka + " " + this.model;
+//     },
+//     "tlFiyat" : function(){
+//         var dolarKuru = 5.70;
+//         return dolarKuru * this.deger + " TL";
+//     },
+//     "kameraBilgileri" : function(){
+//         return "Ön kamera : " + this.onKamera + " Arka Kamera : " + this.arkaKamera;
+//     },
+//     "hafizaBilgileri" : function(hafiza,maxHafiza){
+//         return "Telefon Hafızası :" + hafiza + " GB, Arttırılabilir Max Hafıza : " + maxHafiza + " GB";
+//     }
+// }
+
+// console.log( telefon.telefonAdi.call(samsung));
+// console.log( telefon.tlFiyat.call(huawei) );
+// console.log( telefon.kameraBilgileri.call(samsung) );
+// console.log( telefon.hafizaBilgileri.call(huawei, 64, 128) );
+// console.log( telefon.hafizaBilgileri.apply(huawei, [64 , 128]) );

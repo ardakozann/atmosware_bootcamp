@@ -30,3 +30,8 @@ toString() ile join() nelerdir arasındaki fark ?
 regex nedir
 slice ve splice 
 {[]} (obje içerisinde dizi) ve [{}] (dizi içerisinde obje) aynı mı ?
+
+LIFO FIFO data structure (last in first out), (first in first out)
+apply call bind (javascript object üzerinde)
+
+Hocanın yaptığı template de 
