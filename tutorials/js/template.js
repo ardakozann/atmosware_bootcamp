@@ -785,57 +785,61 @@ var person={
 // console.log(person.eklenen);
 
 //Liretal Template
-function esLiteralTemplate(){
-    var valueTem1="Merhabalar <br> nasılsınız <br> yeni teknolojiler öğreniyorum";
-    document.write('<br>'+valueTem1);
-    console.log(valueTem1+"\ndiğer kelime");
+// function esLiteralTemplate(){
+//     var valueTem1="Merhabalar <br> nasılsınız <br> yeni teknolojiler öğreniyorum";
+//     document.write('<br>'+valueTem1);
+//     console.log(valueTem1+"\ndiğer kelime");
 
-    //multiline
-    var valueTem2=`Merhabalar
-nasılsınız`;
-    console.log(valueTem2);
-}
-//esLiteralTemplate();
+//     //multiline
+//     var valueTem2=`Merhabalar
+// nasılsınız`;
+//     console.log(valueTem2);
+// }
+// //esLiteralTemplate();
 
-//2-) Interpolation `${}`
-function esLiteralInterpolation(){
-    var adi44="Hamit";
-    var soyadi44="Mızrak";
+// //2-) Interpolation `${}`
+// function esLiteralInterpolation(){
+//     var adi44="Hamit";
+//     var soyadi44="Mızrak";
 
-    var valueInter1=adi44+"\n"+soyadi44;
-    console.log(valueInter1);
+//     var valueInter1=adi44+"\n"+soyadi44;
+//     console.log(valueInter1);
 
-    var valueInter2=`adım:${adi44} soyadım:${soyadi44}`;
-    console.log(valueInter2)
-}
+//     var valueInter2=`adım:${adi44} soyadım:${soyadi44}`;
+//     console.log(valueInter2)
+// }
 
-esLiteralInterpolation();
+// esLiteralInterpolation();
 
-// 3-) Html Template
-function normalHtmlTemplate(){
-    var country="Turkey";
-    var html=
-    "<ul>"+
-        "<li>"+
-            country+
-        "</li>"+
-        "<li>"+
-            country.toUpperCase()+
-        "</li>"+
-    "</ul>";
-    document.body.innerHTML=html;
-  }
-  //normalHtmlTemplate()
+// // 3-) Html Template
+// function normalHtmlTemplate(){
+//     var country="Turkey";
+//     var html=
+//     "<ul>"+
+//         "<li>"+
+//             country+
+//         "</li>"+
+//         "<li>"+
+//             country.toUpperCase()+
+//         "</li>"+
+//     "</ul>";
+//     document.body.innerHTML=html;
+//   }
+//   //normalHtmlTemplate()
   
-  function esTemplateHtmlTemplate(){
-    var country="Turkey";
-  var html=
-  `
-  <ul>
-      <li>${country}</li>
-      <li>${country}</li>
-  </ul>
-  `;
-  document.body.innerHTML=html;
-  }
-  esTemplateHtmlTemplate()
+//   function esTemplateHtmlTemplate(){
+//     var country="Turkey";
+//   var html=
+//   `
+//   <ul>
+//       <li>${country}</li>
+//       <li>${country}</li>
+//   </ul>
+//   `;
+//   document.body.innerHTML=html;
+//   }
+//   esTemplateHtmlTemplate()
+
+let str = "Apple, Banana, Kiwi";
+let part = str.substring(7, 13);
+console.log(part);
