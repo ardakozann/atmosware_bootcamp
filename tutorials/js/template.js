@@ -905,11 +905,11 @@ function domFunction() {
     //document.getElementsByTagName("h5")[0].innerHTML="Değiştirildi.";
     //document.getElementsByClassName("dom_class")[0].innerHTML="<b><i>Değiştirildi.</i></b>";
     //document.getElementsByClassName("dom_class")[0].innerText="<b><i>Değiştirildi.</i></b>";
-    document.getElementsByClassName("dom_class")[0].style.color="blue";
-    document.getElementsByClassName("dom_class")[0].style.backgroundColor="black";
-    document.getElementsByClassName("dom_class")[0].style.fontSize="15px";
-    console.log(document.getElementById("a_id").getAttribute("href"));
-    document.getElementById("a_id").setAttribute("href","hhtps://www.google.com");
+    // document.getElementsByClassName("dom_class")[0].style.color="blue";
+    // document.getElementsByClassName("dom_class")[0].style.backgroundColor="black";
+    // document.getElementsByClassName("dom_class")[0].style.fontSize="15px";
+    // console.log(document.getElementById("a_id").getAttribute("href"));
+    // document.getElementById("a_id").setAttribute("href","hhtps://www.google.com");
 }
 
 
