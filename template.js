@@ -1,3 +1,47 @@
-function getDateAndTime(){
-    document.getElementById("dateandtime_now").innerHTML=new Date();
-}
+$(function () {
+    // auto-complete
+    var availableTags = [
+      'ActionScript',
+      'AppleScript',
+      'Asp',
+      'BASIC',
+      'C',
+      'C++',
+      'Clojure',
+      'COBOL',
+      'ColdFusion',
+      'Erlang',
+      'Fortran',
+      'Groovy',
+      'Haskell',
+      'Java',
+      'JavaScript',
+      'Lisp',
+      'Perl',
+      'PHP',
+      'Python',
+      'Ruby',
+      'Scala',
+      'Scheme',
+    ]
+    $('#tags').autocomplete({
+      source: availableTags,
+    })
+  
+  
+  
+  
+    //date
+    let showDate=()=>{
+        return new Date();
+    }
+  
+  //toggle show/hide
+ 
+  $("#show_hide_toggler").click(function(){
+      $("#date_hide").html(showDate())
+      $("#date_hide").toggle(1000)
+  })
+  
+  
+  })

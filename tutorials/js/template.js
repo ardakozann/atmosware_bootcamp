@@ -950,3 +950,38 @@ function domFunction() {
 // console.log( telefon.kameraBilgileri.call(samsung) );
 // console.log( telefon.hafizaBilgileri.call(huawei, 64, 128) );
 // console.log( telefon.hafizaBilgileri.apply(huawei, [64 , 128]) );
+
+/////////////////////////////////////////////////////////////////////////////////////
+//JQUERY
+
+function dom_javascript(){
+    //document.getElementById("jquery_id").innerHTML="<b><mark>JavaScript</mark></b>"
+    document.getElementById("jquery_id").innerText="<b><mark>JavaScript</mark></b>";
+    document.getElementById("jquery_id").style.color="red";
+    document.getElementById("jquery_id").style.fontSize="55px";
+}
+  
+  
+function dom_jquery(){
+    // $(selector).attributes()
+    //$('#jquery_id').html("<b><mark><i>jQuery</i></mark></b>")
+    $('#jquery_id').text("<b><mark><i>jQuery</i></mark></b>");
+    $('#jquery_id').css("color","blue").css("fontSize","45px");
+
+    let allCssObject={
+        color:"yellow",
+        fontSize:"45px",
+        boxShadow:"1px 1px 3px 1px rgba(255,255,255,.8)"
+    };
+    $('#jquery_id').css(allCssObject);
+}
+
+//document ready => js yüklenirken ki ekranda yapılacak işlemler
+//her iki şekilde de çalışıyor
+// $(funtion(){
+
+// });
+// $(document).ready(function () {
+    
+// });
+

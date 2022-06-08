@@ -73,7 +73,11 @@ p{
     box-shadow: 1px 1px 1px 4px rgba(255, 255, 255, .8);
 }
 
-/* ################################################ *
+/* ################################################ */
+
+.ui-menu-item{
+    color: black;
+}
 
 /* header */
 header{
@@ -109,8 +113,10 @@ background-color: black!important;
     max-height: 30rem !important;
 }
 
-#main_card_header_bottom h5,
-p {
+#main_card_header_bottom h5{
+    color: black;
+}
+#main_card_header_bottom p {
     color: black;
 }
 
@@ -127,6 +133,6 @@ footer{
    
 }
 
-footer > h6,p,div{
+footer h6,footer p, footer div{
     color:#f2f1ea;
 }
