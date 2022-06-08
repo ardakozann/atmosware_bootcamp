@@ -37,11 +37,7 @@ body{
 
 #hakkimda_resim{
     width: 25rem;
-    margin-left: 15rem;
-}
-
-#hakkimda_aciklama{
-    padding-left: 7rem;
+    margin-left: 7rem;
 }
 
 a:link,a:visited {
