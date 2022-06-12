@@ -64,18 +64,20 @@ a:link,a:visited {
     padding-right: 10rem;
 }
 
-#deneyimler_ilksatir, #deneyimler_ikincisatir{
+/* #deneyimler_ilksatir, #deneyimler_ikincisatir{
     padding-left: 6.5rem;
-}
+} */
 
 #div_mesajgonder_isim, #div_mesajgonder_eposta{
 
     display: inline;
 }
 
-#mesajgonder_buton{
-    margin-left: 45.5%;
-    
+#mesajgonder_buton_div{
+    /* margin-left: 45.5%; */
+    margin: 0;
+    padding: 0;
+    text-align: center !important;
 }
 
 #back_top{
@@ -111,8 +113,6 @@ footer{
         margin: 0;
         padding: 0;
         text-align: center !important;
-        /* margin-left: 6.5%; */
-        padding-bottom: 10%;
     }
     #first_profilresmi{
         margin: 0;
@@ -126,13 +126,10 @@ footer{
     #hakkimda_aciklama{
         margin: 0;
         padding: 0;
-        padding-top: 1rem;
         padding-left: 1rem;
         padding-right: 1rem;
     }
-    #hakkimda_aciklama_baslik{
-        text-align: center !important;
-    }
+    
     #hakkimda_aciklama_yazi{
         text-align: justify;
     }
@@ -168,9 +165,9 @@ footer{
         margin-top: 1rem;
         
     }
-    .card_div{
+    /* .card_div{
         padding-left: 20%;
-    }
+    } */
     #yetenekler_sol, #yetenekler_sag{
         padding: 0;
         padding-right: 8%;
@@ -179,9 +176,70 @@ footer{
 
 }
 
+@media screen and (max-width: 767px){
+    #first_profilresmi_div{
+        padding-bottom: 10%;
+    }
+    #first_profilresmi{
+        margin: 0;
+        padding: 0;
+        text-align: center !important;
+    }
+    #first_aciklama{
+        margin: 0;
+        padding: 0;
+        text-align: center !important;
+    }
+    /* #hakkimda_resim{
+        text-align: center !important;
+    } */
+
+    #kurs{
+        margin-top: 2rem;
+        padding: 0 !important;
+    }
+    #okul{
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .card{
+        margin-top: 1rem;
+    }
+    #yetenekler_sol, #yetenekler_sag{
+        padding: 0;
+        padding-right: 8% !important;
+    }
+}
+
+@media screen and (max-width:991px){
+    #hakkimda_resim_div{
+        text-align: center !important;
+        
+    }
+    #hakkimda_aciklama{
+        padding-top: 1rem;
+    }
+    #hakkimda_aciklama_baslik{
+        text-align: center !important;
+    }
+}
+
 @media screen and (max-width: 1382px){
     #hakkimda_resim{
         margin-left: 0;
+    }
+    #okul{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    #kurs{
+        padding-left: 0;
+        padding-right: 3rem;
+    }
+    #yetenekler_sol, #yetenekler_sag{
+        padding: 0;
+        /* padding-right: 8%; */
     }
 }
 
